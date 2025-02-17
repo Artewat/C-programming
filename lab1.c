@@ -2,7 +2,7 @@
 #include <math.h>
 int main()
 {
-	printf("A program for finding x's of a quadratic equation using a discriminant.\n");
+    printf("A program for finding x's of a quadratic equation using a discriminant.\n");
     int a, b, c;
     printf("Print a b c: ");
     scanf("%d %d %d", &a, &b, &c);
