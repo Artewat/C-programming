@@ -3,13 +3,16 @@
 #include <ctype.h>
 int main()
 {
-    char e[] = "abdldabadsfba";
+    char e[] = "abdldabadsfba.";
     for(int i = 0; i < strlen(e); i++)
     {
         if((e[i] == 'a') | (e[i] == 'b'))
         {
-                    e[i] = toupper(e[i]);
-
+            e[i] = toupper(e[i]);
+        }
+        if (e[i] == '.')
+        {
+            e[i] = '!';
         }
     }
     printf("%s\n", e);
